@@ -1,3 +1,5 @@
+This is a reproducible example of the bug filed in https://github.com/bazelbuild/rules_python/issues/2575.
+
 ## Overview
 
 `bazel coverage` fails without any useful messages when some Python packages are
