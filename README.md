@@ -1,7 +1,7 @@
 ## Overview
 
-`bazel coverage` fails silently when some Python packages are being used/imported.
-Some examples:
+`bazel coverage` fails without any useful messages when some Python packages are
+being used/imported. Some examples:
 
 - `torchvision`
 - `transformers.models.distilbert.DistilBertModel`
@@ -94,7 +94,7 @@ There were tests whose specified size is too big. Use the --test_verbose_timeout
 ```
 
 
-However, commenting those imports should lead to a successful test coverage ✅:
+However, commenting those imports above should lead to a successful test coverage ✅:
 
 ```bash
 $ bazel coverage --combined_report=lcov :test --nocache_test_results --test_output=all
