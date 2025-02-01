@@ -1,5 +1,5 @@
 # Importing any of these would result in coverage issues ❌
-# import torchvision
+import torchvision
 # from transformers.models.distilbert import DistilBertModel
 
 from main import foo
